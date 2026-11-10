@@ -1,0 +1,21 @@
+{
+  "name": "lilian",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview",
+    "tailwind": "npx @tailwindcss/cli -i ./src/css/main.css -o ./src/css/output.css --watch",
+    "tailwind:build": "npx @tailwindcss/cli -i ./src/css/main.css -o ./src/css/output.css"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.5",
+    "tailwindcss": "^4.3.5",
+    "vite": "^8.3.4"
+  },
+  "dependencies": {
+    "swiper": "^14.4.0"
+  }
+}

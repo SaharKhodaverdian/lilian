@@ -1,0 +1,102 @@
+    <!-- login -->
+    <dialog
+      id="login-modal"
+      dir="rtl"
+      aria-labelledby="login-title"
+      class="fixed inset-0 m-auto max-h-[90dvh] w-[92vw] max-w-147 overflow-y-auto border-0 bg-white px-4 pb-8 font-sans text-[#3D3D3D] backdrop:bg-black/50"
+    >
+      <h2
+        id="login-title"
+        class="text-[#525252] my-8 text-center text-[20px] font-bold"
+      >
+        خوش آمدید
+      </h2>
+
+      <form id="login-form" class="flex flex-col gap-4">
+        <div>
+          <label for="login-phone" class="sr-only"> شماره همراه </label>
+
+          <input
+            id="login-phone"
+            name="phone"
+            type="tel"
+            autocomplete="username"
+            placeholder="شماره همراه"
+            required
+            class="h-11 w-full border border-[#B8B8B8] px-4 text-right text-[16px] outline-none"
+          />
+        </div>
+
+        <div class="relative">
+          <label for="login-password" class="sr-only"> کلمه عبور </label>
+
+          <input
+            id="login-password"
+            name="password"
+            type="password"
+            autocomplete="current-password"
+            placeholder="کلمه عبور"
+            required
+            class="h-11 w-full border border-[#B8B8B8] pr-4 pl-12 text-right text-[16px] outline-none focus:border-[#3D3D3D]"
+          />
+
+          <button
+            id="toggle-password"
+            type="button"
+            aria-label="نمایش کلمه عبور"
+            aria-controls="login-password"
+            aria-pressed="false"
+            class="absolute left-4 top-1/2 -translate-y-1/2 flex size-6 items-center justify-center cursor-pointer"
+          >
+            <img src="./src/images/svg/Eye Slash.svg" alt="" class="size-6" />
+          </button>
+        </div>
+
+        <button
+          type="button"
+          class="w-fit text-[14px] text-[#B8B8B8] cursor-pointer"
+        >
+          کلمه عبور خود را فراموش کرده‌اید؟
+        </button>
+
+        <button
+          type="submit"
+          class="my-3 h-11.5 w-full text-[14px] font-bold cursor-pointer bg-white text-[#3D3D3D] transition-colors ease-in-out border border-[#3D3D3D] hover:bg-[#3D3D3D] hover:text-white"
+        >
+          ورود
+        </button>
+      </form>
+
+      <div class="my-7 flex items-center gap-3">
+        <span class="h-px flex-1 bg-[#BDBDBD]"></span>
+
+        <span class="text-[12px] text-[#8F8F8F]"> ورود از طریق </span>
+
+        <span class="h-px flex-1 bg-[#BDBDBD]"></span>
+      </div>
+
+      <div class="flex gap-4">
+        <button
+          dir="ltr"
+          type="button"
+          class="flex h-10 flex-1 items-center justify-center gap-2 border border-[#B8B8B8] text-[12px] cursor-pointer hover:bg-[#F5F5F5]"
+        >
+          <div aria-hidden="true" class="">
+            <img src="./src/images/svg/google.svg" alt="" />
+          </div>
+          ورود با گوگل
+        </button>
+
+        <button
+          dir="ltr"
+          type="button"
+          class="flex h-10 flex-1 items-center justify-center gap-2 border border-[#B8B8B8] text-[12px] cursor-pointer hover:bg-[#F5F5F5]"
+        >
+          <div aria-hidden="true" class="">
+            <img src="./src/images/svg/Envelope.svg" alt="" />
+          </div>
+          ورود با ایمیل
+        </button>
+      </div>
+    </dialog>
+    <!-- login  -->

@@ -1,0 +1,59 @@
+<dialog
+  id="cart-drawer"
+  dir="rtl"
+  aria-labelledby="cart-title"
+  class="fixed inset-y-0 right-auto left-0 m-0 h-dvh max-h-dvh w-92.75 max-w-full border-0 bg-white p-0 font-sans text-xs text-[#3D3D3D] backdrop:bg-white/35"
+>
+  <div class="flex h-full flex-col">
+    <header
+      class="flex shrink-0 items-center justify-between bg-[#CCCCCC] px-4.5 py-3"
+    >
+      <button
+        id="cart-title"
+        type="button"
+        data-close-cart
+        class="flex cursor-pointer items-center gap-2"
+      >
+        <img
+          src="./src/images/shopping-page/II/arrow-right.svg"
+          alt=""
+          class="size-4"
+        />
+
+        <span class="font-bold text-[#525252]">ادامه خرید</span>
+      </button>
+
+      <button
+        type="button"
+        data-close-cart
+        aria-label="بستن سبد خرید"
+        class="cursor-pointer text-[24px] leading-none"
+      >
+        ×
+      </button>
+    </header>
+
+    <div
+      id="cart-items"
+      class="min-h-0 flex-1 overflow-y-auto overscroll-contain px-4.5  [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+    ></div>
+
+    <footer class="shrink-0 px-4.5 py-5">
+      <div class="mb-6 flex items-center justify-between">
+        <strong>جمع:</strong>
+
+        <strong id="cart-total"></strong>
+      </div>
+
+      <button
+        id="cart-checkout"
+        type="button"
+        class="w-full cursor-pointer bg-[#666666] py-3.5 text-white transition-colors hover:bg-[#3D3D3D] disabled:cursor-default disabled:opacity-50"
+      >
+        خرید
+      </button>
+
+      <p id="cart-message" role="status" class="mt-2 leading-6"></p>
+    </footer>
+  </div>
+</dialog>
