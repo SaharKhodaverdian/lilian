@@ -380,6 +380,9 @@
   .block {
     display: block;
   }
+  .contents {
+    display: contents;
+  }
   .flex {
     display: flex;
   }
@@ -1282,6 +1285,9 @@
   }
   .grayscale {
     --tw-grayscale: grayscale(100%);
+    filter: var(--tw-blur, ) var(--tw-brightness, ) var(--tw-contrast, ) var(--tw-grayscale, ) var(--tw-hue-rotate, ) var(--tw-invert, ) var(--tw-saturate, ) var(--tw-sepia, ) var(--tw-drop-shadow, );
+  }
+  .filter {
     filter: var(--tw-blur, ) var(--tw-brightness, ) var(--tw-contrast, ) var(--tw-grayscale, ) var(--tw-hue-rotate, ) var(--tw-invert, ) var(--tw-saturate, ) var(--tw-sepia, ) var(--tw-drop-shadow, );
   }
   .transition-colors {
@@ -2831,6 +2837,78 @@ html {
   }
   #site-header > div > div > div:first-of-type {
     width: 84px;
+  }
+}
+.page-order-result .success-phone {
+  display: none;
+}
+.page-order-result .success-large {
+  display: block;
+}
+.page-order-result .success-large > img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+@media (max-width: 767px) {
+  .page-order-result .success-large {
+    display: none;
+  }
+  .page-order-result .purchase-success-banner.success-phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% - 32px);
+    height: 48px;
+    min-height: 0;
+    margin: 0 auto 24px;
+    padding: 0;
+    background: #f3fdfa;
+    box-sizing: border-box;
+  }
+  .page-order-result .purchase-success-banner.success-phone > img {
+    display: block;
+    width: 220px;
+    max-width: calc(100% - 24px);
+    height: auto;
+    margin: 0;
+  }
+}
+#purchase-success {
+  width: min(1097px, calc(100% - 48px));
+  margin: 0 auto 40px;
+}
+#purchase-success > picture {
+  display: block;
+}
+#purchase-success > picture > img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+@media (max-width: 767px) {
+  #purchase-success {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% - 32px);
+    height: 48px;
+    margin-bottom: 24px;
+    padding: 8px 12px;
+    background: #f3fdfa;
+    box-sizing: border-box;
+  }
+  #purchase-success > picture {
+    width: 220px;
+    max-width: 100%;
+  }
+  #purchase-success > picture > img {
+    width: 100%;
+    height: auto;
   }
 }
 @property --tw-translate-x {

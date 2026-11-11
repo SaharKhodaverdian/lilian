@@ -33,7 +33,7 @@
             ۲
           </a>
           <a
-          href="./payment.html"
+            href="./payment.html"
             class="w-10 h-10 rounded-full bg-[#525252] border border-[#525252] text-[#F5F5F5] flex items-center justify-center"
           >
             ۳
@@ -51,8 +51,17 @@
         <!-- buying levels -->
 
         <!-- middle -->
-        <div class="w-274.25 h-14 mx-auto mb-10">
-          <img src="./src/images/svg/succifull-message.svg" alt="" />
+        <div id="purchase-success">
+          <picture>
+            <source
+              media="(max-width: 767px)"
+              srcset="./src/images/svg/title.svg"
+            />
+            <img
+              src="./src/images/svg/succifull-message.svg"
+              alt="پرداخت با موفقیت انجام شد"
+            />
+          </picture>
         </div>
         <div
           class="w-274.25 h-58.5 border border-[#a3a3a3] p-6 flex flex-col gap-4 mx-auto"
@@ -228,7 +237,7 @@
           <div
             class="h-full w-50 flex items-center justify-center bg-[#3d3d3d] text-[#f5f5f5] py-4.25 text-[14px] font-bold cursor-pointer"
           >
-            <h5 >چاپ فاکتور خرید</h5>
+            <h5>چاپ فاکتور خرید</h5>
           </div>
           <a
             href="./index.html"
